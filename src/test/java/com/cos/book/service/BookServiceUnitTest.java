@@ -17,9 +17,9 @@ import com.cos.book.domain.BookRepository;
 public class BookServiceUnitTest {
 	
 	@InjectMocks // BookService객체가 만들어질 때  BookServiceUnitTest 파일에 @Mock로 등록된 모든 애들을 주입받는다.
-	private final BookService bookService;
+	private BookService bookService;
 	
 	@Mock
-	private final BookRepository bookRepository;
+	private BookRepository bookRepository;
 
 }
